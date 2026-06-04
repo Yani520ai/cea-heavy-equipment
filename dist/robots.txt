@@ -1,3 +1,4 @@
 User-agent: *
 Allow: /
-Sitemap: https://ceatradebridge.com/sitemap.xml
+
+Sitemap: https://www.ceatradebridge.com/sitemap.xml

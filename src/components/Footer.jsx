@@ -1,146 +1,69 @@
 import React from 'react'
-import { MessageSquare, Mail, ArrowRight } from 'lucide-react'
+import { Mail, MessageCircle } from 'lucide-react'
+import { contact } from '../data/siteData'
+import { buildWhatsAppUrl } from '../utils/whatsapp'
 
 export default function Footer() {
-  const currentYear = new Date().getFullYear()
-
   return (
-    <footer className="relative bg-brand-navy-dark border-t border-white/5">
-      {/* Top CTA bar */}
-      <div className="bg-brand-gold">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8 py-5">
-          <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
+    <footer className="bg-brand-navy-dark">
+      <div className="bg-brand-gold py-6 text-brand-navy">
+        <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-4 px-4 text-center sm:flex-row sm:px-6 lg:px-8">
+          <div>
+            <div className="font-heading text-3xl font-black uppercase">Ready to receive current machines?</div>
+            <div className="font-body text-sm font-bold">Send one WhatsApp message. We will ask the rest.</div>
+          </div>
+          <a href={buildWhatsAppUrl('Hello. Please send current available used heavy equipment from China.')} target="_blank" rel="noopener noreferrer" className="bg-brand-navy px-6 py-4 font-body text-sm font-black uppercase tracking-wider text-brand-gold hover:bg-brand-steel">
+            WhatsApp Now
+          </a>
+        </div>
+      </div>
+
+      <div className="mx-auto grid max-w-7xl grid-cols-1 gap-10 px-4 py-14 sm:px-6 md:grid-cols-4 lg:px-8">
+        <div className="md:col-span-2">
+          <div className="flex items-center gap-3">
+            <div className="flex h-11 w-11 items-center justify-center bg-brand-gold font-heading text-xl font-black text-brand-navy">CEA</div>
             <div>
-              <span className="font-heading font-bold text-brand-navy text-xl">
-                Ready to source equipment from China?
-              </span>
+              <div className="font-heading text-xl font-black uppercase text-white">{contact.brandName}</div>
+              <div className="font-body text-xs font-black uppercase tracking-[0.24em] text-brand-gold">Used equipment sourcing from China</div>
             </div>
-            <a
-              href="#contact"
-              className="flex items-center gap-2 bg-brand-navy text-brand-gold font-body font-semibold text-sm px-6 py-3 hover:bg-brand-navy-dark transition-colors group"
-            >
-              Request Equipment List
-              <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
-            </a>
           </div>
+          <p className="mt-5 max-w-md font-body text-sm leading-relaxed text-brand-slate">
+            We help buyers source used excavators, loaders, cranes, forklifts, trucks and construction machinery through major China equipment markets and partner yards. We send current photos, videos, inspection details and CIF options after request.
+          </p>
+          <div className="mt-6 flex flex-col gap-3 text-sm text-brand-slate">
+            <a className="flex items-center gap-2 hover:text-brand-gold" href={buildWhatsAppUrl()} target="_blank" rel="noopener noreferrer"><MessageCircle size={17} className="text-green-400" /> +{contact.whatsapp}</a>
+            <a className="flex items-center gap-2 hover:text-brand-gold" href={`mailto:${contact.email}`}><Mail size={17} className="text-brand-gold" /> {contact.email}</a>
+          </div>
+        </div>
+
+        <div>
+          <div className="footer-title">Website</div>
+          <ul className="footer-list">
+            <li><a href="#categories">Equipment Categories</a></li>
+            <li><a href="#network">Why No Stock List</a></li>
+            <li><a href="#how-it-works">How It Works</a></li>
+            <li><a href="#evidence">Evidence Pack</a></li>
+            <li><a href="#markets">Markets</a></li>
+            <li><a href="#find-machine">Find My Machine</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <div className="footer-title">Core Actions</div>
+          <ul className="footer-list">
+            <li><a href={buildWhatsAppUrl('Hello. Please send available used excavators from China.')} target="_blank" rel="noopener noreferrer">Request Excavators</a></li>
+            <li><a href={buildWhatsAppUrl('Hello. Please send current crane options from China.')} target="_blank" rel="noopener noreferrer">Request Cranes</a></li>
+            <li><a href={buildWhatsAppUrl('Hello. Please send CIF price options for used equipment from China.')} target="_blank" rel="noopener noreferrer">Request CIF Price</a></li>
+            <li><a href={buildWhatsAppUrl('Hello. Please send machine videos before quotation.')} target="_blank" rel="noopener noreferrer">Request Videos</a></li>
+            <li><a href={buildWhatsAppUrl('Hello. I want inspection before buying used equipment from China.')} target="_blank" rel="noopener noreferrer">Discuss Inspection</a></li>
+          </ul>
         </div>
       </div>
 
-      {/* Main footer */}
-      <div className="max-w-7xl mx-auto px-6 lg:px-8 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
-
-          {/* Brand column */}
-          <div className="lg:col-span-2">
-            <div className="flex items-center gap-3 mb-6">
-              <div className="w-10 h-10 bg-brand-gold flex items-center justify-center font-heading font-bold text-brand-navy text-lg">
-                CEA
-              </div>
-              <div>
-                <div className="font-heading font-bold text-white text-lg leading-tight tracking-wide">
-                  HEAVY EQUIPMENT
-                </div>
-                <div className="text-brand-gold text-xs font-body tracking-widest uppercase">
-                  by CEA Trade Bridge
-                </div>
-              </div>
-            </div>
-            <p className="font-body text-brand-slate text-sm leading-relaxed max-w-sm mb-8">
-              Connecting Equipment Opportunities Across China, Africa and Europe.
-              Specialized B2B heavy equipment sourcing — cranes, construction machinery, 
-              mining equipment and port equipment.
-            </p>
-
-            {/* Social/contact quick */}
-            <div className="flex flex-col gap-3">
-              <a
-                href="https://wa.me/34613021897"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-3 text-brand-slate hover:text-brand-gold transition-colors group"
-              >
-                <div className="w-8 h-8 bg-brand-gold/10 border border-brand-gold/20 flex items-center justify-center group-hover:bg-brand-gold/20 transition-colors">
-                  <MessageSquare size={14} className="text-brand-gold" />
-                </div>
-                <span className="font-body text-sm">+34 613 021 897</span>
-              </a>
-              <a
-                href="mailto:yani@linkace.es"
-                className="flex items-center gap-3 text-brand-slate hover:text-brand-gold transition-colors group"
-              >
-                <div className="w-8 h-8 bg-brand-gold/10 border border-brand-gold/20 flex items-center justify-center group-hover:bg-brand-gold/20 transition-colors">
-                  <Mail size={14} className="text-brand-gold" />
-                </div>
-                <span className="font-body text-sm">yani@linkace.es</span>
-              </a>
-            </div>
-          </div>
-
-          {/* Navigation */}
-          <div>
-            <div className="font-heading font-semibold text-white text-lg mb-6 uppercase tracking-wider">
-              Navigation
-            </div>
-            <ul className="space-y-3">
-              {[
-                { label: 'Home', href: '#' },
-                { label: 'Equipment', href: '#equipment' },
-                { label: 'Why Us', href: '#why-us' },
-                { label: 'Markets', href: '#markets' },
-                { label: 'About', href: '#about' },
-                { label: 'Contact', href: '#contact' },
-              ].map(link => (
-                <li key={link.label}>
-                  <a
-                    href={link.href}
-                    className="font-body text-brand-slate text-sm hover:text-brand-gold transition-colors flex items-center gap-2 group"
-                  >
-                    <ArrowRight size={10} className="opacity-0 group-hover:opacity-100 transition-opacity" />
-                    {link.label}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Equipment */}
-          <div>
-            <div className="font-heading font-semibold text-white text-lg mb-6 uppercase tracking-wider">
-              Equipment
-            </div>
-            <ul className="space-y-3">
-              {[
-                'Used Truck Cranes',
-                'Used Crawler Cranes',
-                'All Terrain Cranes',
-                'Mining Equipment',
-                'Port Equipment',
-                'Custom Sourcing',
-              ].map(item => (
-                <li key={item}>
-                  <a
-                    href="#equipment"
-                    className="font-body text-brand-slate text-sm hover:text-brand-gold transition-colors flex items-center gap-2 group"
-                  >
-                    <ArrowRight size={10} className="opacity-0 group-hover:opacity-100 transition-opacity" />
-                    {item}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      {/* Bottom bar */}
-      <div className="border-t border-white/5">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8 py-5 flex flex-col sm:flex-row items-center justify-between gap-3">
-          <p className="font-body text-brand-slate text-xs">
-            © {currentYear} CEA Heavy Equipment · Powered by CEA Trade Bridge · ceatradebridge.com
-          </p>
-          <p className="font-body text-brand-slate text-xs">
-            China · Africa · Europe · Middle East
-          </p>
+      <div className="border-t border-white/10 py-5">
+        <div className="mx-auto flex max-w-7xl flex-col justify-between gap-3 px-4 font-body text-xs text-brand-slate sm:flex-row sm:px-6 lg:px-8">
+          <span>© {new Date().getFullYear()} {contact.parentName} · {contact.domain}</span>
+          <span>Representative category images only. Current machine photos are sent after request.</span>
         </div>
       </div>
     </footer>

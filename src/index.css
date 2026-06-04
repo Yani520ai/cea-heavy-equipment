@@ -3,53 +3,34 @@
 @tailwind utilities;
 
 @layer base {
-  html {
-    scroll-behavior: smooth;
-  }
+  html { scroll-behavior: smooth; }
   body {
+    margin: 0;
     font-family: 'DM Sans', sans-serif;
-    background-color: #0B1F3A;
+    background: #071428;
     color: #CBD5E1;
     -webkit-font-smoothing: antialiased;
+    text-rendering: geometricPrecision;
   }
-  h1, h2, h3, h4, h5, h6 {
-    font-family: 'Barlow Condensed', sans-serif;
-    letter-spacing: 0.02em;
-  }
+  h1, h2, h3, h4, h5, h6 { font-family: 'Barlow Condensed', sans-serif; letter-spacing: 0.01em; }
+  ::selection { background: #C8952A; color: #071428; }
 }
 
 @layer components {
-  .section-label {
-    @apply text-brand-gold text-sm font-body font-medium tracking-widest uppercase;
-  }
-  .section-title {
-    @apply font-heading font-bold text-white leading-tight;
-  }
-  .btn-primary {
-    @apply bg-brand-gold hover:bg-brand-gold-light text-brand-navy font-body font-semibold px-8 py-3.5 transition-all duration-200 uppercase tracking-wider text-sm;
-  }
-  .btn-outline {
-    @apply border border-white/30 hover:border-brand-gold text-white hover:text-brand-gold font-body font-medium px-8 py-3.5 transition-all duration-200 text-sm tracking-wider;
-  }
-  .card-dark {
-    @apply bg-brand-steel/30 border border-white/5 hover:border-brand-gold/30 transition-all duration-300;
-  }
+  .section-label { @apply font-body text-xs font-black uppercase tracking-[0.28em] text-brand-gold; }
+  .section-title { @apply font-heading font-black uppercase leading-[0.93] tracking-wide text-white; }
+  .body-copy { @apply font-body leading-relaxed text-brand-slate; }
+  .btn-gold { @apply inline-flex items-center justify-center gap-2 bg-brand-gold px-6 py-4 font-body text-sm font-black uppercase tracking-wider text-brand-navy transition hover:bg-brand-gold-light; }
+  .btn-green { @apply inline-flex items-center justify-center gap-2 bg-green-500 px-6 py-4 font-body text-sm font-black uppercase tracking-wider text-white transition hover:bg-green-400; }
+  .btn-outline { @apply inline-flex items-center justify-center gap-2 border border-white/20 px-6 py-4 font-body text-sm font-black uppercase tracking-wider text-white transition hover:border-brand-gold hover:text-brand-gold; }
+  .card-dark { @apply border border-white/10 bg-brand-navy-dark/80 shadow-2xl shadow-black/10; }
+  .input { @apply w-full border border-white/10 bg-brand-steel/35 px-4 py-3 font-body text-white outline-none transition placeholder:text-brand-slate/60 focus:border-brand-gold focus:bg-brand-steel/55; }
+  .label { @apply mb-2 block font-body text-[11px] font-black uppercase tracking-[0.18em] text-brand-gold; }
+  .footer-title { @apply mb-5 font-heading text-xl font-black uppercase tracking-wider text-white; }
+  .footer-list { @apply space-y-3 font-body text-sm text-brand-slate; }
+  .footer-list a { @apply hover:text-brand-gold; }
 }
 
-/* Custom scrollbar */
-::-webkit-scrollbar { width: 6px; }
-::-webkit-scrollbar-track { background: #0B1F3A; }
-::-webkit-scrollbar-thumb { background: #C8952A; border-radius: 3px; }
-
-/* Fade in animation */
-@keyframes fadeInUp {
-  from { opacity: 0; transform: translateY(24px); }
-  to { opacity: 1; transform: translateY(0); }
+@media (max-width: 640px) {
+  body { padding-bottom: 64px; }
 }
-.animate-fade-in-up {
-  animation: fadeInUp 0.7s ease forwards;
-}
-.delay-100 { animation-delay: 0.1s; }
-.delay-200 { animation-delay: 0.2s; }
-.delay-300 { animation-delay: 0.3s; }
-.delay-400 { animation-delay: 0.4s; }

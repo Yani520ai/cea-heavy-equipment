@@ -1,25 +1,47 @@
-import React from 'react'
-import Navbar from './components/Navbar'
+import React, { useEffect } from 'react'
+import Header from './components/Header'
 import Hero from './components/Hero'
-import Equipment from './components/Equipment'
-import WhyUs from './components/WhyUs'
+import BuyerShortcuts from './components/BuyerShortcuts'
+import MachineCategories from './components/MachineCategories'
+import NetworkModel from './components/NetworkModel'
+import PopularRequests from './components/PopularRequests'
+import FastestReply from './components/FastestReply'
+import HowItWorks from './components/HowItWorks'
+import EvidencePack from './components/EvidencePack'
+import BuyerSafety from './components/BuyerSafety'
 import Markets from './components/Markets'
-import About from './components/About'
-import Contact from './components/Contact'
+import ExportScenarios from './components/ExportScenarios'
+import TrustSection from './components/TrustSection'
+import LeadForm from './components/LeadForm'
+import FAQ from './components/FAQ'
 import Footer from './components/Footer'
 import WhatsAppFloat from './components/WhatsAppFloat'
+import { attachConversionTracking, loadAnalytics } from './utils/analytics'
 
 export default function App() {
+  useEffect(() => {
+    loadAnalytics()
+    return attachConversionTracking()
+  }, [])
+
   return (
-    <div className="min-h-screen bg-brand-navy">
-      <Navbar />
+    <div className="min-h-screen bg-brand-navy text-white">
+      <Header />
       <main>
         <Hero />
-        <Equipment />
-        <WhyUs />
+        <BuyerShortcuts />
+        <MachineCategories />
+        <NetworkModel />
+        <PopularRequests />
+        <FastestReply />
+        <HowItWorks />
+        <EvidencePack />
+        <BuyerSafety />
         <Markets />
-        <About />
-        <Contact />
+        <ExportScenarios />
+        <TrustSection />
+        <LeadForm />
+        <FAQ />
       </main>
       <Footer />
       <WhatsAppFloat />
