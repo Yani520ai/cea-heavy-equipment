@@ -68,6 +68,9 @@ const labels = {
 }
 
 export default function Hero({ lang = 'en' }) {
+  console.log('Hero language = ', lang)
+
+  
   const [machineType, setMachineType] = useState('Excavator')
   const [country, setCountry] = useState(lang === 'fr' ? 'Benin' : 'Nigeria')
   const [whatsapp, setWhatsapp] = useState('')
