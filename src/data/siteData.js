@@ -18,23 +18,43 @@ export const analytics = {
   enableWhatsAppClickTracking: true,
 }
 
-export const defaultWhatsAppMessage = 'Hello. I am looking for used construction equipment from China. Please send current available machines with photos, videos and CIF options.'
+export const defaultWhatsAppMessage = {
+  en: 'Hello. I am looking for used construction equipment from China. Please send current available machines with photos, videos and CIF options.',
 
-export const hero = {
-  eyebrow: 'China used-equipment sourcing for global buyers',
-  title: 'Looking For Used Construction Equipment From China?',
-  highlight: 'Tell Us What Machine You Need.',
-  subtitle:
-    'CEA helps global buyers source used excavators, loaders, cranes, forklifts and heavy equipment through major China used-equipment markets and partner yards. Do not waste time browsing old stock lists. Send your machine type, country and port — we send current photos, videos, nameplate, hour meter, inspection details and CIF options by WhatsApp.',
-  proofPoints: [
-    'WhatsApp first',
-    'Voice message welcome',
-    'Current photos & videos',
-    'CIF options by port',
-    'No fake stock list',
-  ],
+  fr: 'Bonjour. Je recherche des équipements de construction d’occasion en provenance de Chine. Merci de m’envoyer les machines disponibles avec photos, vidéos et prix CIF.'
 }
 
+export const hero = {
+  en: {
+    eyebrow: 'China used-equipment sourcing for global buyers',
+    title: 'Looking For Used Construction Equipment From China?',
+    highlight: 'Tell Us What Machine You Need.',
+    subtitle:
+      'CEA helps global buyers source used excavators, loaders, cranes, forklifts and heavy equipment through major China equipment markets.',
+    proofPoints: [
+      'WhatsApp first',
+      'Voice message welcome',
+      'Current photos & videos',
+      'CIF options by port',
+      'No fake stock list',
+    ],
+  },
+
+  fr: {
+    eyebrow: 'Approvisionnement en équipements d’occasion depuis la Chine',
+    title: 'Vous recherchez des équipements de construction d’occasion en provenance de Chine ?',
+    highlight: 'Dites-nous quelle machine vous recherchez.',
+    subtitle:
+      'CEA aide les acheteurs internationaux à trouver des excavatrices, chargeuses, grues, chariots élévateurs et autres équipements grâce aux principaux marchés chinois.',
+    proofPoints: [
+      'WhatsApp en priorité',
+      'Message vocal accepté',
+      'Photos et vidéos actuelles',
+      'Options CIF par port',
+      'Pas de fausse liste de stock',
+    ],
+  },
+}
 export const quickMachineTypes = [
   'Excavator',
   'Wheel Loader',

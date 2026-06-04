@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import Header from './components/Header'
 import Hero from './components/Hero'
 import BuyerShortcuts from './components/BuyerShortcuts'
@@ -19,6 +19,8 @@ import WhatsAppFloat from './components/WhatsAppFloat'
 import { attachConversionTracking, loadAnalytics } from './utils/analytics'
 
 export default function App() {
+  const [lang, setLang] = useState('en')
+
   useEffect(() => {
     loadAnalytics()
     return attachConversionTracking()
@@ -26,10 +28,10 @@ export default function App() {
 
   return (
     <div className="min-h-screen bg-brand-navy text-white">
-      <Header />
-      <main>
-        <Hero />
-        <BuyerShortcuts />
+      <Header lang={lang} setLang={setLang} />
+<main>
+  <Hero lang={lang} />
+  <BuyerShortcuts lang={lang} />
         <MachineCategories />
         <NetworkModel />
         <PopularRequests />
