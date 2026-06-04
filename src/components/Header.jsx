@@ -54,7 +54,7 @@ export default function Header({ lang, setLang }) {
           <span>{t.needNow}</span>
           <a
             className="underline underline-offset-2"
-            href={buildWhatsAppUrl(t.message)}
+            href={buildWhatsAppUrl(t.message, lang)}
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -118,7 +118,7 @@ export default function Header({ lang, setLang }) {
 
         <div className="hidden items-center gap-3 sm:flex">
           <a
-            href={buildWhatsAppUrl(t.message)}
+            href={buildWhatsAppUrl(t.message, lang)}
             target="_blank"
             rel="noopener noreferrer"
             className="btn-green py-3"
@@ -175,7 +175,7 @@ export default function Header({ lang, setLang }) {
               </a>
             ))}
             <a
-              href={buildWhatsAppUrl(t.message)}
+              href={buildWhatsAppUrl(t.message, lang)}
               target="_blank"
               rel="noopener noreferrer"
               className="btn-green w-full"

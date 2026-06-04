@@ -119,21 +119,21 @@ export default function Hero({ lang = 'en' }) {
 
           <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
             <button
-              onClick={() => openWhatsApp(message, 'hero_whatsapp_now')}
+              onClick={() => openWhatsApp(message, 'hero_whatsapp_now', lang)}
               className="btn-green px-8 py-5 text-base shadow-xl shadow-green-950/30"
             >
               <MessageCircle size={22} /> {t.whatsappNow}
             </button>
 
             <button
-              onClick={() => openWhatsApp(t.availableMessage, 'hero_available_machines')}
+              onClick={() => openWhatsApp(t.availableMessage, 'hero_available_machines, lang')}
               className="btn-gold px-8 py-5 text-base"
             >
               {t.sendAvailable} <ArrowRight size={18} />
             </button>
 
             <button
-              onClick={() => openWhatsApp(t.cifMessage, 'hero_cif')}
+              onClick={() => openWhatsApp(t.cifMessage, 'hero_cif', lang)}
               className="btn-outline px-8 py-5 text-base"
             >
               {t.requestCif}
@@ -204,7 +204,7 @@ export default function Hero({ lang = 'en' }) {
             </label>
 
             <button
-              onClick={() => openWhatsApp(message, 'hero_quick_request')}
+              onClick={() => openWhatsApp(message, 'hero_quick_request', lang)}
               className="btn-green w-full py-5 text-base"
             >
               <Search size={20} /> {t.sendRequest}
