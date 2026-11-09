@@ -19,7 +19,7 @@ export default function WhatsAppFloat() {
 
       <div className="fixed inset-x-0 bottom-0 z-50 grid grid-cols-3 border-t border-white/10 bg-brand-navy-dark sm:hidden">
         <a href={buildWhatsAppUrl()} target="_blank" rel="noopener noreferrer" className="flex flex-col items-center gap-1 bg-green-500 px-2 py-3 text-[11px] font-black uppercase tracking-wide text-white"><MessageCircle size={19} /> WhatsApp</a>
-        <a href="#find-machine" className="flex flex-col items-center gap-1 bg-brand-gold px-2 py-3 text-[11px] font-black uppercase tracking-wide text-brand-navy"><Search size={19} /> Find</a>
+        <a href="/stock" className="flex flex-col items-center gap-1 bg-brand-gold px-2 py-3 text-[11px] font-black uppercase tracking-wide text-brand-navy"><Search size={19} /> Catalogue</a>
         <a href={buildWhatsAppUrl('Hello. I need CIF price for used heavy equipment from China.')} target="_blank" rel="noopener noreferrer" className="flex flex-col items-center gap-1 bg-brand-steel px-2 py-3 text-[11px] font-black uppercase tracking-wide text-white"><Ship size={19} /> CIF</a>
       </div>
     </>

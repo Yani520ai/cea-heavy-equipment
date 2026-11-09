@@ -7,7 +7,7 @@ const labels = {
     needNow: 'Need equipment now?',
     voiceWelcome: 'WhatsApp directly — voice message welcome',
     categories: 'Categories',
-    noStock: 'Why no stock list',
+    catalogue: 'Crane catalogue',
     howItWorks: 'How it works',
     inspection: 'Inspection',
     markets: 'Markets',
@@ -22,7 +22,7 @@ const labels = {
     needNow: 'Besoin d’une machine maintenant ?',
     voiceWelcome: 'WhatsApp direct — message vocal accepté',
     categories: 'Catégories',
-    noStock: 'Pourquoi pas de liste de stock',
+    catalogue: 'Catalogue de grues',
     howItWorks: 'Comment ça fonctionne',
     inspection: 'Inspection',
     markets: 'Marchés',
@@ -39,12 +39,10 @@ export default function Header({ lang, setLang }) {
   const t = labels[lang] || labels.en
 
   const links = [
-    { label: t.categories, href: '#categories' },
-    { label: t.noStock, href: '#network' },
-    { label: t.howItWorks, href: '#how-it-works' },
-    { label: t.inspection, href: '#evidence' },
-    { label: t.markets, href: '#markets' },
-    { label: t.findMachine, href: '#find-machine' },
+    { label: t.catalogue, href: '/stock' },
+    { label: t.categories, href: '/#categories' },
+    { label: t.howItWorks, href: '/#how-it-works' },
+    { label: t.inspection, href: '/#evidence' },
   ]
 
   return (
@@ -64,7 +62,7 @@ export default function Header({ lang, setLang }) {
       </div>
 
       <nav className="mx-auto flex h-20 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
-        <a href="#top" className="flex items-center gap-3" aria-label="CEA Heavy Equipment home">
+        <a href="/#top" className="flex items-center gap-3" aria-label="CEA Heavy Equipment home">
           <div className="flex h-11 w-11 items-center justify-center bg-brand-gold font-heading text-xl font-black text-brand-navy">
             CEA
           </div>
@@ -78,7 +76,7 @@ export default function Header({ lang, setLang }) {
           </div>
         </a>
 
-        <div className="hidden items-center gap-6 lg:flex">
+        <div className="hidden items-center gap-5 xl:flex">
           {links.map((link) => (
             <a
               key={link.href}
@@ -90,7 +88,7 @@ export default function Header({ lang, setLang }) {
           ))}
         </div>
 
-        <div className="fixed right-4 top-28 z-[9999] flex items-center gap-2 rounded bg-brand-navy-dark/95 p-2 shadow-lg lg:static lg:bg-transparent lg:p-0 lg:shadow-none">
+        <div className="ml-auto mr-3 hidden items-center gap-2 sm:flex xl:ml-0 xl:mr-0">
           <button
             type="button"
             onClick={() => setLang('en')}
@@ -116,7 +114,7 @@ export default function Header({ lang, setLang }) {
           </button>
         </div>
 
-        <div className="hidden items-center gap-3 sm:flex">
+        <div className="hidden items-center gap-3 md:flex">
           <a
             href={buildWhatsAppUrl(t.message, lang)}
             target="_blank"
@@ -125,19 +123,19 @@ export default function Header({ lang, setLang }) {
           >
             <MessageCircle size={18} /> {t.whatsapp}
           </a>
-          <a href="#find-machine" className="btn-gold py-3">
+          <a href="/#find-machine" className="btn-gold py-3">
             {t.findMachine}
           </a>
         </div>
 
-        <button className="text-white sm:hidden" onClick={() => setOpen(!open)} aria-label="Open menu">
+        <button className="ml-3 text-white xl:hidden" onClick={() => setOpen(!open)} aria-label="Open menu" aria-expanded={open} aria-controls="cea-mobile-menu">
           {open ? <X size={26} /> : <Menu size={26} />}
         </button>
       </nav>
 
       {open && (
-        <div className="border-t border-white/10 bg-brand-navy-dark px-4 py-5 sm:hidden">
-          <div className="mb-4 flex gap-2">
+        <div id="cea-mobile-menu" className="max-h-[calc(100dvh-115px)] overflow-y-auto border-t border-white/10 bg-brand-navy-dark px-4 py-5 xl:hidden">
+          <div className="mb-4 flex gap-2 sm:hidden">
             <button
               type="button"
               onClick={() => setLang('en')}

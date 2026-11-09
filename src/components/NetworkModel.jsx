@@ -15,10 +15,10 @@ export default function NetworkModel() {
               <span className="section-label">Important sourcing model</span>
             </div>
             <h2 className="section-title text-4xl sm:text-5xl lg:text-6xl">
-              Why We Do Not List Thousands Of Machines Online
+              Browse Real Listings. Confirm Your Exact Machine.
             </h2>
             <p className="mt-6 body-copy text-base text-brand-slate-light">
-              This is not a weakness. It is how serious used-equipment sourcing works. We do not want buyers to waste time on expired or misleading inventory pages.
+              Start with the crane catalogue, then send the reference and your destination. We confirm the unit, current condition and commercial terms before you decide.
             </p>
             <div className="mt-7 space-y-4">
               {networkReasons.map((reason) => (

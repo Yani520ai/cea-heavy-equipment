@@ -8,7 +8,7 @@ const labels = {
     representative:
       'Representative category image · current machines sent after request',
     whatsappNow: 'WhatsApp Now',
-    sendAvailable: 'Send Me Available Machines',
+    sendAvailable: 'Browse Crane Catalogue',
     requestCif: 'Request CIF Price',
     whatsappFirst: 'WhatsApp first',
     voiceWelcome: 'Voice message welcome',
@@ -39,7 +39,7 @@ const labels = {
     representative:
       'Image représentative · les machines disponibles sont envoyées après demande',
     whatsappNow: 'Discuter sur WhatsApp',
-    sendAvailable: 'Envoyez-moi les machines disponibles',
+    sendAvailable: 'Voir le Catalogue de Grues',
     requestCif: 'Demander un Prix CIF',
     whatsappFirst: 'WhatsApp en priorité',
     voiceWelcome: 'Message vocal accepté',
@@ -68,7 +68,6 @@ const labels = {
 }
 
 export default function Hero({ lang = 'en' }) {
-  console.log('Hero language = ', lang)
 
   
   const [machineType, setMachineType] = useState('Excavator')
@@ -125,12 +124,12 @@ export default function Hero({ lang = 'en' }) {
               <MessageCircle size={22} /> {t.whatsappNow}
             </button>
 
-            <button
-              onClick={() => openWhatsApp(t.availableMessage, 'hero_available_machines, lang')}
+            <a
+              href="/stock"
               className="btn-gold px-8 py-5 text-base"
             >
               {t.sendAvailable} <ArrowRight size={18} />
-            </button>
+            </a>
 
             <button
               onClick={() => openWhatsApp(t.cifMessage, 'hero_cif', lang)}

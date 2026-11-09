@@ -36,7 +36,7 @@ export const hero = {
       'Voice message welcome',
       'Current photos & videos',
       'CIF options by port',
-      'No fake stock list',
+      'Real crane listing photos',
     ],
   },
 
@@ -134,7 +134,7 @@ export const popularRequests = [
 export const networkReasons = [
   'Used equipment inventory changes every day.',
   'A machine shown online may already be sold, repainted, moved or reserved.',
-  'Instead of showing outdated stock, we match your exact request across China yards and supplier channels.',
+  'Browse dated crane listings, then ask us to confirm availability for the exact stock reference.',
   'After your request, we send current machine photos, videos, nameplate, hour meter, condition details and CIF options directly by WhatsApp.',
 ]
 
@@ -159,7 +159,7 @@ export const evidenceItems = [
 
 export const trustItems = [
   { title: 'Access to Major China Equipment Markets', text: 'We source through a wide equipment network instead of relying on one small yard.' },
-  { title: 'No Fake Online Inventory', text: 'Representative website images are not promoted as live stock. Current machines are sent after request.' },
+  { title: 'Clear Equipment References', text: 'The crane catalogue uses actual listing photos and stock references. Other category images are representative. Availability is confirmed on request.' },
   { title: 'WhatsApp-First Sales Process', text: 'Buyers can contact directly, send voice messages and receive options without a long form.' },
   { title: 'Photos & Videos Before Confirmation', text: 'We can send current photos, videos, nameplate and hour meter details before price confirmation.' },
   { title: 'Inspection Welcome', text: 'Video inspection, buyer inspection and third-party inspection can be discussed before shipment.' },
@@ -260,14 +260,14 @@ export const exportScenarios = [
 ]
 
 export const buyerSafety = [
-  'Representative website images are for category illustration only.',
+  'The crane catalogue uses actual listing photographs; category illustrations are labelled separately.',
   'Current machine photos and videos are sent after request.',
   'Buyer inspection or third-party inspection can be discussed.',
   'We recommend confirming machine condition, serial details, loading method and destination port before payment decisions.',
 ]
 
 export const faqs = [
-  { q: 'Do you list all available machines online?', a: 'No. Used-equipment inventory changes daily. We source based on your request and send current options by WhatsApp.' },
+  { q: 'Can I browse machines before contacting you?', a: 'Yes. Open the crane catalogue to compare 64 dated listings, view actual photos and send a specific stock reference. Availability changes, so we confirm each machine and send current information on request. We also source other equipment types.' },
   { q: 'Can I just contact by WhatsApp without filling the form?', a: 'Yes. WhatsApp is the fastest way. You can send one short message or a voice note with machine type and country. We will ask the rest.' },
   { q: 'Can you send videos before quotation?', a: 'Yes. For available machines, we can request or provide current photos, working video, nameplate, hour meter and condition details where available.' },
   { q: 'Can you quote CIF to my port?', a: 'Send your destination port. We can help discuss machine price and shipping route options where possible.' },

@@ -1,0 +1,925 @@
+[
+  {
+    "code": "121206",
+    "make": "XCMG",
+    "model": "25K5D",
+    "year": "2021",
+    "brief": "2,000+ h reported",
+    "capacity": 25,
+    "note": "Reported Apr 2021; located in Jiangxi.",
+    "images": [
+      "/catalogue-images/121206_0.webp"
+    ],
+    "category": "crane",
+    "releaseRequired": false
+  },
+  {
+    "code": "122339",
+    "make": "ZOOMLION",
+    "model": "130V7",
+    "year": "2025",
+    "brief": "7-section boom",
+    "capacity": 130,
+    "note": "China VI emissions as listed; exact nameplate model to confirm.",
+    "images": [
+      "/catalogue-images/122339_0.webp",
+      "/catalogue-images/122339_1.webp",
+      "/catalogue-images/122339_2.webp"
+    ],
+    "category": "crane",
+    "releaseRequired": false
+  },
+  {
+    "code": "122307",
+    "make": "XCMG",
+    "model": "25K5D",
+    "year": "2021",
+    "brief": "700 h / 8,000 km",
+    "capacity": 25,
+    "note": "Reported Apr 2021; located in Henan.",
+    "images": [
+      "/catalogue-images/122307_0.webp"
+    ],
+    "category": "crane",
+    "releaseRequired": false
+  },
+  {
+    "code": "122386",
+    "make": "SANY",
+    "model": "SAC2200C7",
+    "year": "2019",
+    "brief": "73 m boom / 76.5 t CW",
+    "capacity": 220,
+    "note": "36 m jib; four hooks reported.",
+    "images": [
+      "/catalogue-images/122386_2.webp",
+      "/catalogue-images/122386_0.webp",
+      "/catalogue-images/122386_1.webp",
+      "/catalogue-images/122386_3.webp"
+    ],
+    "category": "crane",
+    "releaseRequired": false
+  },
+  {
+    "code": "122388",
+    "make": "ZOOMLION",
+    "model": "130 t crane",
+    "year": "2013",
+    "brief": "57.5 m boom / 45 t CW",
+    "capacity": 130,
+    "note": "Six-section boom; auxiliary winch and three hooks reported.",
+    "images": [
+      "/catalogue-images/122388_0.webp"
+    ],
+    "category": "crane",
+    "releaseRequired": false
+  },
+  {
+    "code": "122143",
+    "make": "SANY",
+    "model": "70T5",
+    "year": "2020",
+    "brief": "20 t counterweight",
+    "capacity": 70,
+    "note": "Reported Jun 2020 registration; exact model to confirm.",
+    "images": [
+      "/catalogue-images/122143_0.webp"
+    ],
+    "category": "crane",
+    "releaseRequired": false
+  },
+  {
+    "code": "122440",
+    "make": "XCMG",
+    "model": "QY50KC",
+    "year": "2021",
+    "brief": "Located in Zhejiang",
+    "capacity": 50,
+    "note": "Further machine-specific parameters available on enquiry.",
+    "images": [
+      "/catalogue-images/122440_0.webp"
+    ],
+    "category": "crane",
+    "releaseRequired": false
+  },
+  {
+    "code": "122466",
+    "make": "SANY",
+    "model": "300E5",
+    "year": "2021",
+    "brief": "Jib included",
+    "capacity": 30,
+    "note": "China V as listed; reported Apr 2021.",
+    "images": [
+      "/catalogue-images/122466_0.webp"
+    ],
+    "category": "crane",
+    "releaseRequired": false
+  },
+  {
+    "code": "122465",
+    "make": "HCTM",
+    "model": "14 t loader crane",
+    "year": "2021",
+    "brief": "5-section boom / 17,000 km",
+    "capacity": 14,
+    "note": "Truck-mounted loader crane; located in Hunan.",
+    "images": [
+      "/catalogue-images/122465_0.webp"
+    ],
+    "category": "loader",
+    "releaseRequired": false
+  },
+  {
+    "code": "122464",
+    "make": "HCTM",
+    "model": "12 t / Shacman M3000",
+    "year": "2023",
+    "brief": "17.5 m boom / 8.5 m body",
+    "capacity": 12,
+    "note": "270 hp; China VI as listed; 40,000+ km reported.",
+    "images": [
+      "/catalogue-images/122464_0.webp"
+    ],
+    "category": "loader",
+    "releaseRequired": false
+  },
+  {
+    "code": "122463",
+    "make": "ZOOMLION",
+    "model": "550H",
+    "year": "2020",
+    "brief": "11.5 t CW / 19,000 km",
+    "capacity": 55,
+    "note": "Reported May 2020; located in Guangdong.",
+    "images": [
+      "/catalogue-images/122463_0.webp"
+    ],
+    "category": "crane",
+    "releaseRequired": false
+  },
+  {
+    "code": "122462",
+    "make": "ZOOMLION",
+    "model": "120V5 (as listed)",
+    "year": "2023",
+    "brief": "38 m boom / 2,000+ h",
+    "capacity": null,
+    "note": "20,000+ km reported; exact model and capacity to confirm.",
+    "images": [
+      "/catalogue-images/122462_0.webp"
+    ],
+    "category": "crane",
+    "releaseRequired": false
+  },
+  {
+    "code": "122461",
+    "make": "SANY",
+    "model": "250C5-8",
+    "year": "2024",
+    "brief": "1,000+ h / 6,000 km",
+    "capacity": 25,
+    "note": "Reported Jan 2024; located in Guangdong.",
+    "images": [
+      "/catalogue-images/122461_1.webp",
+      "/catalogue-images/122461_0.webp",
+      "/catalogue-images/122461_2.webp"
+    ],
+    "category": "crane",
+    "releaseRequired": false
+  },
+  {
+    "code": "122460",
+    "make": "SANY",
+    "model": "250T",
+    "year": "2018",
+    "brief": "Located in Guizhou",
+    "capacity": 25,
+    "note": "Additional configuration and current condition on enquiry.",
+    "images": [
+      "/catalogue-images/122460_0.webp"
+    ],
+    "category": "crane",
+    "releaseRequired": false
+  },
+  {
+    "code": "122459",
+    "make": "XCMG",
+    "model": "XCT100",
+    "year": "2018",
+    "brief": "64 m boom / 40 t CW",
+    "capacity": 100,
+    "note": "Twin Weichai engines reported; configuration to reconfirm.",
+    "images": [
+      "/catalogue-images/122459_1.webp",
+      "/catalogue-images/122459_0.webp"
+    ],
+    "category": "crane",
+    "releaseRequired": false
+  },
+  {
+    "code": "122458",
+    "make": "XCMG",
+    "model": "20K5",
+    "year": "2018",
+    "brief": "China V as listed",
+    "capacity": 20,
+    "note": "Reported Mar 2018; located in Jiangsu.",
+    "images": [
+      "/catalogue-images/122458_0.webp"
+    ],
+    "category": "crane",
+    "releaseRequired": false
+  },
+  {
+    "code": "122457",
+    "make": "SANY",
+    "model": "250T",
+    "year": "2021",
+    "brief": "Located in Shanxi",
+    "capacity": 25,
+    "note": "Reported Mar 2021; documentation review available on enquiry.",
+    "images": [
+      "/catalogue-images/122457_0.webp"
+    ],
+    "category": "crane",
+    "releaseRequired": false
+  },
+  {
+    "code": "122456",
+    "make": "SANY",
+    "model": "250C5-2",
+    "year": "2021",
+    "brief": "43.5 m boom / 6,000 h",
+    "capacity": 25,
+    "note": "Reported Mar 2021 registration; located in Hunan.",
+    "images": [
+      "/catalogue-images/122456_0.webp"
+    ],
+    "category": "crane",
+    "releaseRequired": false
+  },
+  {
+    "code": "122454",
+    "make": "SANY",
+    "model": "120C4 (as listed)",
+    "year": "2019",
+    "brief": "Reported May 2019",
+    "capacity": null,
+    "note": "Exact nameplate model and rated capacity to confirm.",
+    "images": [
+      "/catalogue-images/122454_0.webp"
+    ],
+    "category": "crane",
+    "releaseRequired": false
+  },
+  {
+    "code": "122455",
+    "make": "XCMG",
+    "model": "25K5C",
+    "year": "2020",
+    "brief": "42 m boom / 6,000 h",
+    "capacity": 25,
+    "note": "Reported Sep 2020; located in Shandong.",
+    "images": [
+      "/catalogue-images/122455_0.webp"
+    ],
+    "category": "crane",
+    "releaseRequired": false
+  },
+  {
+    "code": "122453",
+    "make": "HAOTIAN",
+    "model": "14 t loader crane",
+    "year": "2021",
+    "brief": "19.5 m boom / 8.5 m body",
+    "capacity": 14,
+    "note": "Five-section boom; reported Feb 2021 registration.",
+    "images": [
+      "/catalogue-images/122453_0.webp"
+    ],
+    "category": "loader",
+    "releaseRequired": false
+  },
+  {
+    "code": "122452",
+    "make": "SANY",
+    "model": "550T6",
+    "year": "2020",
+    "brief": "52 m boom / 10.5 t CW",
+    "capacity": 55,
+    "note": "Reported Mar 2020; located in Hunan.",
+    "images": [
+      "/catalogue-images/122452_0.webp"
+    ],
+    "category": "crane",
+    "releaseRequired": false
+  },
+  {
+    "code": "122451",
+    "make": "SANY",
+    "model": "2000C8-8",
+    "year": "2025",
+    "brief": "90 m boom / 61 t CW",
+    "capacity": 200,
+    "note": "Model family confirmed by manufacturer as STC2000C8-8.",
+    "images": [
+      "/catalogue-images/122451_0.webp",
+      "/catalogue-images/122451_1.webp"
+    ],
+    "category": "crane",
+    "releaseRequired": false
+  },
+  {
+    "code": "122450",
+    "make": "XCMG",
+    "model": "70KD-1",
+    "year": "2021",
+    "brief": "50.5 m boom / 17 t CW",
+    "capacity": 70,
+    "note": "Weichai engine reported; located in Jiangsu.",
+    "images": [
+      "/catalogue-images/122450_0.webp"
+    ],
+    "category": "crane",
+    "releaseRequired": false
+  },
+  {
+    "code": "122449",
+    "make": "XCMG",
+    "model": "XCT25L5",
+    "year": "2018",
+    "brief": "Located in Jiangsu",
+    "capacity": 25,
+    "note": "Additional configuration and current condition on enquiry.",
+    "images": [
+      "/catalogue-images/122449_0.webp"
+    ],
+    "category": "crane",
+    "releaseRequired": false
+  },
+  {
+    "code": "122448",
+    "make": "SANY",
+    "model": "400T",
+    "year": "2020",
+    "brief": "Located in Sichuan",
+    "capacity": 40,
+    "note": "Reported Apr 2020; current photos available on enquiry.",
+    "images": [
+      "/catalogue-images/122448_0.webp"
+    ],
+    "category": "crane",
+    "releaseRequired": false
+  },
+  {
+    "code": "119588",
+    "make": "XCMG",
+    "model": "XCT85L7",
+    "year": "2020",
+    "brief": "68 m boom / 33 t CW",
+    "capacity": 85,
+    "note": "Configuration and load chart to reconfirm for the selected unit.",
+    "images": [
+      "/catalogue-images/119588_0.webp"
+    ],
+    "category": "crane",
+    "releaseRequired": false
+  },
+  {
+    "code": "121143",
+    "make": "SANY",
+    "model": "350C5",
+    "year": "2022",
+    "brief": "44 m boom / 3,000+ h",
+    "capacity": 35,
+    "note": "15,000 km; China VI as listed; reported Apr 2022.",
+    "images": [
+      "/catalogue-images/121143_1.webp",
+      "/catalogue-images/121143_0.webp"
+    ],
+    "category": "crane",
+    "releaseRequired": false
+  },
+  {
+    "code": "122447",
+    "make": "ZOOMLION",
+    "model": "80VS5",
+    "year": "2025",
+    "brief": "49 m boom / 18 t CW",
+    "capacity": 80,
+    "note": "1,300 h and 9,000 km reported; Mar 2025 registration.",
+    "images": [
+      "/catalogue-images/122447_2.webp",
+      "/catalogue-images/122447_0.webp",
+      "/catalogue-images/122447_1.webp"
+    ],
+    "category": "crane",
+    "releaseRequired": false
+  },
+  {
+    "code": "122375",
+    "make": "SANY",
+    "model": "550C5-8",
+    "year": "2023",
+    "brief": "48.5 m boom / 15.7 t CW",
+    "capacity": 55,
+    "note": "Located in Hunan; equipment configuration to reconfirm.",
+    "images": [
+      "/catalogue-images/122375_1.webp",
+      "/catalogue-images/122375_0.webp"
+    ],
+    "category": "crane",
+    "releaseRequired": false
+  },
+  {
+    "code": "122446",
+    "make": "XCMG",
+    "model": "100K7C",
+    "year": "2022",
+    "brief": "75 m boom / 39 t CW",
+    "capacity": 100,
+    "note": "Five axles; seven-section boom; Weichai engine reported.",
+    "images": [
+      "/catalogue-images/122446_0.webp",
+      "/catalogue-images/122446_1.webp",
+      "/catalogue-images/122446_2.webp"
+    ],
+    "category": "crane",
+    "releaseRequired": false
+  },
+  {
+    "code": "122067",
+    "make": "XCMG",
+    "model": "XCT85L7",
+    "year": "2021",
+    "brief": "68 m boom / 27 m jib",
+    "capacity": 85,
+    "note": "33 t counterweight reported; equipment records on enquiry.",
+    "images": [
+      "/catalogue-images/122067_0.webp"
+    ],
+    "category": "crane",
+    "releaseRequired": false
+  },
+  {
+    "code": "122445",
+    "make": "SANY",
+    "model": "500C5-8 Pro",
+    "year": "2025",
+    "brief": "Recent model year",
+    "capacity": 50,
+    "note": "Configuration and displayed hours to be confirmed for the unit.",
+    "images": [
+      "/catalogue-images/122445_1.webp",
+      "/catalogue-images/122445_0.webp",
+      "/catalogue-images/122445_2.webp"
+    ],
+    "category": "crane",
+    "releaseRequired": false
+  },
+  {
+    "code": "122300",
+    "make": "SANY",
+    "model": "250C5-1",
+    "year": "2020",
+    "brief": "5,000+ h reported",
+    "capacity": 25,
+    "note": "Reported May 2020; located in Guangdong.",
+    "images": [
+      "/catalogue-images/122300_0.webp"
+    ],
+    "category": "crane",
+    "releaseRequired": false
+  },
+  {
+    "code": "122005",
+    "make": "SANY",
+    "model": "250T5-1",
+    "year": "2020",
+    "brief": "8,000+ h / 10,000+ km",
+    "capacity": 25,
+    "note": "Reported Jul 2020; located in Hunan.",
+    "images": [
+      "/catalogue-images/122005_0.webp"
+    ],
+    "category": "crane",
+    "releaseRequired": false
+  },
+  {
+    "code": "122004",
+    "make": "SANY",
+    "model": "250E5",
+    "year": "2020",
+    "brief": "8,000+ h / 10,000+ km",
+    "capacity": 25,
+    "note": "Reported May 2020; located in Hunan.",
+    "images": [
+      "/catalogue-images/122004_0.webp"
+    ],
+    "category": "crane",
+    "releaseRequired": false
+  },
+  {
+    "code": "122444",
+    "make": "XCMG",
+    "model": "70K-1",
+    "year": "2009",
+    "brief": "Located in Shandong",
+    "capacity": 70,
+    "note": "Additional configuration and current condition on enquiry.",
+    "images": [
+      "/catalogue-images/122444_0.webp"
+    ],
+    "category": "crane",
+    "releaseRequired": false
+  },
+  {
+    "code": "122443",
+    "make": "MAKE TO CONFIRM",
+    "model": "130 t all-terrain",
+    "year": "2022",
+    "brief": "63 t counterweight",
+    "capacity": 130,
+    "note": "Brand and exact model not stated in the album post.",
+    "images": [
+      "/catalogue-images/122443_0.webp"
+    ],
+    "category": "crane",
+    "releaseRequired": false
+  },
+  {
+    "code": "122442",
+    "make": "XCMG",
+    "model": "25K5C",
+    "year": "2019",
+    "brief": "China V as listed",
+    "capacity": 25,
+    "note": "Reported Jun 2019; located in Shandong.",
+    "images": [
+      "/catalogue-images/122442_0.webp"
+    ],
+    "category": "crane",
+    "releaseRequired": false
+  },
+  {
+    "code": "122441",
+    "make": "SANY",
+    "model": "STC120T5 (as listed)",
+    "year": "2025",
+    "brief": "Model verification required",
+    "capacity": null,
+    "note": "Reported Jan 2025; exact model and capacity to confirm.",
+    "images": [
+      "/catalogue-images/122441_0.webp",
+      "/catalogue-images/122441_1.webp",
+      "/catalogue-images/122441_2.webp"
+    ],
+    "category": "crane",
+    "releaseRequired": false
+  },
+  {
+    "code": "122439",
+    "make": "SANY",
+    "model": "1000T",
+    "year": "2019",
+    "brief": "64.5 m boom / 40.2 t CW",
+    "capacity": 100,
+    "note": "Configuration and current condition on enquiry.",
+    "images": [
+      "/catalogue-images/122439_0.webp"
+    ],
+    "category": "crane",
+    "releaseRequired": false
+  },
+  {
+    "code": "122438",
+    "make": "XCMG",
+    "model": "25K-2",
+    "year": "2018",
+    "brief": "Located in Jiangsu",
+    "capacity": 25,
+    "note": "Lever controls reported; exact nameplate model to confirm.",
+    "images": [
+      "/catalogue-images/122438_0.webp"
+    ],
+    "category": "crane",
+    "releaseRequired": false
+  },
+  {
+    "code": "122437",
+    "make": "SANY",
+    "model": "100C7-1 (as listed)",
+    "year": "2022",
+    "brief": "75.5 m boom / 46 t CW",
+    "capacity": null,
+    "note": "Auxiliary winch reported; title release required before handover.",
+    "images": [
+      "/catalogue-images/122437_0.webp"
+    ],
+    "category": "crane",
+    "releaseRequired": true
+  },
+  {
+    "code": "122435",
+    "make": "XCMG",
+    "model": "50K5D-2",
+    "year": "2024",
+    "brief": "Title release required",
+    "capacity": 50,
+    "note": "Finance release to be completed before handover.",
+    "images": [
+      "/catalogue-images/122435_0.webp"
+    ],
+    "category": "crane",
+    "releaseRequired": true
+  },
+  {
+    "code": "122434",
+    "make": "SANY",
+    "model": "100C7-1 (as listed)",
+    "year": "2022",
+    "brief": "75.5 m boom / 46 t CW",
+    "capacity": null,
+    "note": "Jib reported; no auxiliary winch; exact model to confirm.",
+    "images": [
+      "/catalogue-images/122434_0.webp"
+    ],
+    "category": "crane",
+    "releaseRequired": false
+  },
+  {
+    "code": "122433",
+    "make": "SANY",
+    "model": "2200C8",
+    "year": "2018",
+    "brief": "73 m boom / 76.5 t CW",
+    "capacity": 220,
+    "note": "Four hooks and four jib sections reported; late-2018 production.",
+    "images": [
+      "/catalogue-images/122433_0.webp"
+    ],
+    "category": "crane",
+    "releaseRequired": false
+  },
+  {
+    "code": "122432",
+    "make": "ZOOMLION",
+    "model": "ZAT200VS8 (as listed)",
+    "year": "2025",
+    "brief": "200 t / no jib reported",
+    "capacity": 200,
+    "note": "Exact nameplate model to confirm; title release before handover.",
+    "images": [
+      "/catalogue-images/122432_0.webp"
+    ],
+    "category": "crane",
+    "releaseRequired": true
+  },
+  {
+    "code": "122431",
+    "make": "ZOOMLION",
+    "model": "200V7",
+    "year": "2020",
+    "brief": "200 t as listed",
+    "capacity": 200,
+    "note": "Equipment configuration to be confirmed for this unit.",
+    "images": [
+      "/catalogue-images/122431_1.webp",
+      "/catalogue-images/122431_0.webp"
+    ],
+    "category": "crane",
+    "releaseRequired": false
+  },
+  {
+    "code": "122340",
+    "make": "MODEL TO CONFIRM",
+    "model": "KF-1 (as listed)",
+    "year": "2022",
+    "brief": "3,700 h / 15,000 km",
+    "capacity": null,
+    "note": "Reported Feb 2022; brand and exact model to confirm.",
+    "images": [
+      "/catalogue-images/122340_0.webp"
+    ],
+    "category": "crane",
+    "releaseRequired": false
+  },
+  {
+    "code": "122430",
+    "make": "XCMG",
+    "model": "XCA300L8C",
+    "year": "2022",
+    "brief": "82 m boom / 95 t CW",
+    "capacity": 300,
+    "note": "Superlift and three hooks reported; prepared for export as listed.",
+    "images": [
+      "/catalogue-images/122430_0.webp",
+      "/catalogue-images/122430_1.webp",
+      "/catalogue-images/122430_2.webp",
+      "/catalogue-images/122430_3.webp",
+      "/catalogue-images/122430_4.webp",
+      "/catalogue-images/122430_5.webp",
+      "/catalogue-images/122430_6.webp",
+      "/catalogue-images/122430_7.webp"
+    ],
+    "category": "crane",
+    "releaseRequired": false
+  },
+  {
+    "code": "122429",
+    "make": "SANY",
+    "model": "500E",
+    "year": "2023",
+    "brief": "9.5 t counterweight",
+    "capacity": 50,
+    "note": "Equipment configuration and current condition on enquiry.",
+    "images": [
+      "/catalogue-images/122429_0.webp"
+    ],
+    "category": "crane",
+    "releaseRequired": false
+  },
+  {
+    "code": "122428",
+    "make": "SANY",
+    "model": "300E5",
+    "year": "2021",
+    "brief": "Reported May 2021",
+    "capacity": 30,
+    "note": "Further machine-specific parameters on enquiry.",
+    "images": [
+      "/catalogue-images/122428_0.webp"
+    ],
+    "category": "crane",
+    "releaseRequired": false
+  },
+  {
+    "code": "122110",
+    "make": "XCMG",
+    "model": "XCT25L5",
+    "year": "2017",
+    "brief": "13,000 h reported",
+    "capacity": 25,
+    "note": "Reported Jun 2017; pilot controls; located in Hunan.",
+    "images": [
+      "/catalogue-images/122110_0.webp"
+    ],
+    "category": "crane",
+    "releaseRequired": false
+  },
+  {
+    "code": "122427",
+    "make": "XCMG",
+    "model": "50KC",
+    "year": "2021",
+    "brief": "Located in Jiangsu",
+    "capacity": 50,
+    "note": "Exact nameplate model and current condition on enquiry.",
+    "images": [
+      "/catalogue-images/122427_0.webp"
+    ],
+    "category": "crane",
+    "releaseRequired": false
+  },
+  {
+    "code": "122426",
+    "make": "SANY",
+    "model": "700T5",
+    "year": "2021",
+    "brief": "24.8 t counterweight",
+    "capacity": 70,
+    "note": "Reported May 2021; 385-section front tyres as listed.",
+    "images": [
+      "/catalogue-images/122426_0.webp"
+    ],
+    "category": "crane",
+    "releaseRequired": false
+  },
+  {
+    "code": "122425",
+    "make": "XCMG",
+    "model": "50KC",
+    "year": "2021",
+    "brief": "Located in Sichuan",
+    "capacity": 50,
+    "note": "Reported Mar 2021; exact nameplate model to confirm.",
+    "images": [
+      "/catalogue-images/122425_0.webp"
+    ],
+    "category": "crane",
+    "releaseRequired": false
+  },
+  {
+    "code": "122363",
+    "make": "ZOOMLION",
+    "model": "500H",
+    "year": "2020",
+    "brief": "Located in Anhui",
+    "capacity": 50,
+    "note": "Reported Apr 2020; configuration and current condition on enquiry.",
+    "images": [
+      "/catalogue-images/122363_0.webp"
+    ],
+    "category": "crane",
+    "releaseRequired": false
+  },
+  {
+    "code": "122424",
+    "make": "ZOOMLION",
+    "model": "550H",
+    "year": "2021",
+    "brief": "47.5 m boom / 14 t CW",
+    "capacity": 55,
+    "note": "6,000+ h; 18,000 km; title release required before handover.",
+    "images": [
+      "/catalogue-images/122424_0.webp"
+    ],
+    "category": "crane",
+    "releaseRequired": true
+  },
+  {
+    "code": "122423",
+    "make": "SANY",
+    "model": "400T",
+    "year": "2020",
+    "brief": "5,200+ h / 24,000 km",
+    "capacity": 40,
+    "note": "Jib reported; May 2020 production; located in Anhui.",
+    "images": [
+      "/catalogue-images/122423_0.webp"
+    ],
+    "category": "crane",
+    "releaseRequired": false
+  },
+  {
+    "code": "122270",
+    "make": "ZOOMLION",
+    "model": "50H",
+    "year": "2021",
+    "brief": "5,600 h reported",
+    "capacity": 50,
+    "note": "Reported Jan 2021; exact nameplate model to confirm.",
+    "images": [
+      "/catalogue-images/122270_0.webp"
+    ],
+    "category": "crane",
+    "releaseRequired": false
+  },
+  {
+    "code": "122422",
+    "make": "XCMG",
+    "model": "25K5C",
+    "year": "2021",
+    "brief": "4,800 h reported",
+    "capacity": 25,
+    "note": "Reported Mar 2021; located in Chongqing.",
+    "images": [
+      "/catalogue-images/122422_0.webp"
+    ],
+    "category": "crane",
+    "releaseRequired": false
+  },
+  {
+    "code": "122421",
+    "make": "ZOOMLION",
+    "model": "250HE",
+    "year": "2022",
+    "brief": "43 m boom",
+    "capacity": 25,
+    "note": "Reported Nov 2022; located in Guizhou.",
+    "images": [
+      "/catalogue-images/122421_0.webp"
+    ],
+    "category": "crane",
+    "releaseRequired": false
+  },
+  {
+    "code": "122420",
+    "make": "ZOOMLION",
+    "model": "251V",
+    "year": "2022",
+    "brief": "3,000+ h / 10,000+ km",
+    "capacity": 25,
+    "note": "25 t as listed; located in Guizhou.",
+    "images": [
+      "/catalogue-images/122420_0.webp"
+    ],
+    "category": "crane",
+    "releaseRequired": false
+  },
+  {
+    "code": "122372",
+    "make": "SANY",
+    "model": "1000C7-8",
+    "year": "2023",
+    "brief": "75.5 m boom / 46 t CW",
+    "capacity": 100,
+    "note": "Five axles; two-section jib; title release before handover.",
+    "images": [
+      "/catalogue-images/122372_0.webp"
+    ],
+    "category": "crane",
+    "releaseRequired": true
+  }
+]

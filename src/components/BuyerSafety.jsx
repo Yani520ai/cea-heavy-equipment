@@ -10,7 +10,7 @@ export default function BuyerSafety() {
           <div>
             <div className="mb-4 flex items-center gap-3"><div className="h-px w-12 bg-brand-gold" /><span className="section-label">Buyer safety</span></div>
             <h2 className="section-title text-4xl sm:text-5xl">Clear Rules For Used Equipment Buyers</h2>
-            <p className="mt-5 body-copy">A serious used-equipment website must be transparent. We do not want buyers to believe representative website images are live stock.</p>
+            <p className="mt-5 body-copy">Use the catalogue reference to discuss the exact machine. Confirm its current condition, documentation and inspection arrangements before purchase.</p>
           </div>
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
             {buyerSafety.map((item, index) => (

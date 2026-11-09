@@ -39,12 +39,13 @@ export default function Footer() {
         <div>
           <div className="footer-title">Website</div>
           <ul className="footer-list">
-            <li><a href="#categories">Equipment Categories</a></li>
-            <li><a href="#network">Why No Stock List</a></li>
-            <li><a href="#how-it-works">How It Works</a></li>
-            <li><a href="#evidence">Evidence Pack</a></li>
-            <li><a href="#markets">Markets</a></li>
-            <li><a href="#find-machine">Find My Machine</a></li>
+            <li><a href="/stock">Crane Catalogue</a></li>
+            <li><a href="/#categories">Equipment Categories</a></li>
+            <li><a href="/#network">Our Sourcing Network</a></li>
+            <li><a href="/#how-it-works">How It Works</a></li>
+            <li><a href="/#evidence">Evidence Pack</a></li>
+            <li><a href="/#markets">Markets</a></li>
+            <li><a href="/#find-machine">Find My Machine</a></li>
           </ul>
         </div>
 
@@ -63,7 +64,7 @@ export default function Footer() {
       <div className="border-t border-white/10 py-5">
         <div className="mx-auto flex max-w-7xl flex-col justify-between gap-3 px-4 font-body text-xs text-brand-slate sm:flex-row sm:px-6 lg:px-8">
           <span>© {new Date().getFullYear()} {contact.parentName} · {contact.domain}</span>
-          <span>Representative category images only. Current machine photos are sent after request.</span>
+          <span>Actual listing photos in the crane catalogue. Availability confirmed on request.</span>
         </div>
       </div>
     </footer>
