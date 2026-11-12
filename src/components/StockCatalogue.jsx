@@ -8,9 +8,9 @@ const labels = {
   en: {
     eyebrow: 'REAL MACHINE PHOTOS · CHINA SOURCING', title: 'Find your next crane.',
     intro: 'Compare equipment, open the actual photos and send the stock reference directly to our team.',
-    note: 'November 2026 listings. Availability and condition confirmed on request.',
-    catalogue: 'Crane catalogue', all: 'View all 64 machines', details: 'View details', quote: 'Ask price & availability',
-    reference: 'Reference', year: 'Year', capacity: 'Capacity class', confirm: 'To confirm',
+    note: 'Availability and condition confirmed on request.',
+    catalogue: 'Crane catalogue', all: 'View all machines', details: 'View details', quote: 'Ask price & availability',
+    reference: 'Reference', year: 'Year', capacity: 'Capacity class', confirm: 'To confirm', listed: 'Listed',
     search: 'Search model, year or reference', placeholder: 'e.g. XCA300, 2022 or 122430',
     brand: 'Brand', allBrands: 'All brands', allCapacities: 'All capacities', sort: 'Sort by',
     recent: 'Catalogue order', newest: 'Newest year', asc: 'Capacity: low to high', desc: 'Capacity: high to low',
@@ -29,9 +29,9 @@ const labels = {
   fr: {
     eyebrow: 'PHOTOS RÉELLES · APPROVISIONNEMENT EN CHINE', title: 'Trouvez votre prochaine grue.',
     intro: 'Comparez les machines, consultez leurs photos et envoyez la référence directement à notre équipe.',
-    note: 'Annonces de novembre 2026. Disponibilité et état à confirmer sur demande.',
-    catalogue: 'Catalogue de grues', all: 'Voir les 64 machines', details: 'Voir les détails', quote: 'Demander prix et disponibilité',
-    reference: 'Référence', year: 'Année', capacity: 'Classe de capacité', confirm: 'À confirmer',
+    note: 'Disponibilité et état à confirmer sur demande.',
+    catalogue: 'Catalogue de grues', all: 'Voir toutes les machines', details: 'Voir les détails', quote: 'Demander prix et disponibilité',
+    reference: 'Référence', year: 'Année', capacity: 'Classe de capacité', confirm: 'À confirmer', listed: 'Ajoutée le',
     search: 'Rechercher un modèle, une année ou une référence', placeholder: 'Ex. XCA300, 2022 ou 122430',
     brand: 'Marque', allBrands: 'Toutes les marques', allCapacities: 'Toutes les capacités', sort: 'Trier par',
     recent: 'Ordre du catalogue', newest: 'Année décroissante', asc: 'Capacité croissante', desc: 'Capacité décroissante',
@@ -174,7 +174,7 @@ export default function StockCatalogue({ lang = 'en' }) {
 
   return <div className="cea-stock cea-catalogue-page">
     <section className="cea-stock-hero"><div className="cea-stock-wrap"><a className="cea-back" href="/"><ArrowLeft size={16} />{t.home}</a><p className="cea-stock-eyebrow">{t.eyebrow}</p><h1>{t.title}</h1><p className="cea-stock-intro">{t.intro}</p>
-      <div className="cea-stock-proof"><span><strong>64</strong> {t.plural}</span><span>XCMG / SANY / ZOOMLION</span><span>{t.photos}</span></div><p className="cea-listing-note">{t.note}</p>
+      <div className="cea-stock-proof"><span><strong>{stock.length}</strong> {t.plural}</span><span>XCMG / SANY / ZOOMLION</span><span>{t.photos}</span></div><p className="cea-listing-note">{t.note}</p>
     </div></section>
     <section className="cea-stock-wrap cea-stock-results" ref={resultsTop} aria-label={t.catalogue}>
       <div className="cea-stock-filters">
@@ -194,6 +194,11 @@ export default function StockCatalogue({ lang = 'en' }) {
           {selected.images.length > 1 && <div className="cea-photo-thumbs">{selected.images.map((src, i) => <button key={src} onClick={() => setPhoto(i)} aria-label={`${t.photo} ${i + 1}`} aria-pressed={i === photo}><img src={src} alt="" loading="lazy" /></button>)}</div>}<p className="cea-photo-caption"><Camera size={14} />{t.photos}</p>
         </div>
         <div className="cea-dialog-info"><p className="cea-stock-eyebrow">{selected.make.includes('CONFIRM') ? t.confirm : selected.make}</p><h2 id="cea-machine-title">{selected.model}</h2><p className="cea-dialog-reference">{t.reference} #{selected.code}</p>
+          {selected.listedOn && (
+            <p className="cea-dialog-note">
+              {t.listed} <time dateTime={selected.listedOn}>{selected.listedOn}</time>
+            </p>
+          )}
           <dl className="cea-dialog-metrics"><div><dt>{t.year}</dt><dd>{selected.year}</dd></div><div><dt>{t.capacity}</dt><dd>{selected.capacity ? `${selected.capacity} t` : t.confirm}</dd></div></dl><h3>{t.reported}</h3><p className="cea-dialog-brief">{selected.brief}</p><p className="cea-dialog-note">{selected.note}</p>
           {selected.releaseRequired && <p className="cea-release-note">{t.release}</p>}
           <a className="btn-green cea-dialog-quote" href={enquiry(selected, lang)} target="_blank" rel="noopener noreferrer"><MessageCircle size={18} />{t.quote}</a><p className="cea-quote-note">{t.quoteNote}</p>

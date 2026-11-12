@@ -267,7 +267,7 @@ export const buyerSafety = [
 ]
 
 export const faqs = [
-  { q: 'Can I browse machines before contacting you?', a: 'Yes. Open the crane catalogue to compare 64 dated listings, view actual photos and send a specific stock reference. Availability changes, so we confirm each machine and send current information on request. We also source other equipment types.' },
+  { q: 'Can I browse machines before contacting you?', a: 'Yes. Open the crane catalogue to compare equipment listings, view actual photos and send a specific stock reference. Availability changes, so we confirm each machine and send current information on request. We also source other equipment types.' },
   { q: 'Can I just contact by WhatsApp without filling the form?', a: 'Yes. WhatsApp is the fastest way. You can send one short message or a voice note with machine type and country. We will ask the rest.' },
   { q: 'Can you send videos before quotation?', a: 'Yes. For available machines, we can request or provide current photos, working video, nameplate, hour meter and condition details where available.' },
   { q: 'Can you quote CIF to my port?', a: 'Send your destination port. We can help discuss machine price and shipping route options where possible.' },

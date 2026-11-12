@@ -2,8 +2,9 @@ import { readFile, mkdir, writeFile } from 'node:fs/promises'
 
 const origin = 'https://www.ceatradebridge.com'
 let html = await readFile(new URL('../dist/index.html', import.meta.url), 'utf8')
+const stock = JSON.parse(await readFile(new URL('../src/data/stock.json', import.meta.url), 'utf8'))
 const title = 'Used Crane Catalogue | CEA Heavy Equipment'
-const description = 'Browse 64 crane listings with actual photos, models, years and references. Contact CEA for price, availability, inspection and shipping options.'
+const description = `Browse ${stock.length} crane listings with actual photos, models, years and references. Contact CEA for price, availability, inspection and shipping options.`
 html = html.replace(/<title>[^<]*<\/title>/, `<title>${title}</title>`)
   .replace(/(<meta name="description" content=")[^"]*("\s*\/>)/, `$1${description}$2`)
   .replace(/(<meta property="og:title" content=")[^"]*("\s*\/>)/, `$1${title}$2`)

@@ -4,7 +4,7 @@ Used-equipment sourcing site for `www.ceatradebridge.com`, with a crane catalogu
 
 ## Catalogue
 
-- 64 dated November 2026 listing records and 91 actual photographs.
+- Curated listing records with actual photographs.
 - Search by model, year or reference; filter by brand and capacity; sort and paginate results.
 - English/French catalogue controls follow the existing language switch. Reported listing details remain in English.
 - Share a unit with `/stock?stock=122430`; enquiries include the reference, model, year and machine link.
@@ -12,6 +12,8 @@ Used-equipment sourcing site for `www.ceatradebridge.com`, with a crane catalogu
 - This is a curated catalogue, not an automatic live feed. Confirm current availability, nameplate, condition, included accessories and load chart per quotation.
 
 Records: `src/data/stock.json`. Photos: `public/catalogue-images/`. UI: `src/components/StockCatalogue.jsx` and its CSS.
+
+Place new listings first in `stock.json` with a unique stock code and the listing date in `listedOn` (`YYYY-MM-DD`). Use verified specifications, distinguish meter readings from confirmed condition, and include only buyer-facing information.
 
 The homepage retains the existing sourcing content and adds six featured units. Representative category illustrations remain distinct from actual catalogue photos.
 

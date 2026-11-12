@@ -1,5 +1,59 @@
 [
   {
+    "code": "122491",
+    "make": "XCMG",
+    "model": "QY25K5F-1",
+    "year": "2023",
+    "brief": "3,256 h shown on meter",
+    "capacity": 25,
+    "note": "Nameplate shows May 2023 manufacture and 25 t at a 3 m radius. Ask for current meter readings and a working video.",
+    "images": [
+      "/catalogue-images/122491_0.webp",
+      "/catalogue-images/122491_1.webp",
+      "/catalogue-images/122491_2.webp",
+      "/catalogue-images/122491_3.webp"
+    ],
+    "category": "crane",
+    "releaseRequired": false,
+    "listedOn": "2026-11-12"
+  },
+  {
+    "code": "122490",
+    "make": "SANY",
+    "model": "STC250C5",
+    "year": "2021",
+    "brief": "January 2021 manufacture",
+    "capacity": 25,
+    "note": "Nameplate shows 25 t at a 3 m radius. Ask for current working hours, mileage and a working video.",
+    "images": [
+      "/catalogue-images/122490_0.webp",
+      "/catalogue-images/122490_1.webp",
+      "/catalogue-images/122490_2.webp",
+      "/catalogue-images/122490_3.webp"
+    ],
+    "category": "crane",
+    "releaseRequired": false,
+    "listedOn": "2026-11-12"
+  },
+  {
+    "code": "122489",
+    "make": "SANY",
+    "model": "STC250H",
+    "year": "2019",
+    "brief": "7,540 h / 15,059 km shown on meter",
+    "capacity": 25,
+    "note": "Nameplate shows May 2019 manufacture and 25 t at a 3 m radius. The rear spare tyre appears damaged in the listing photo. Ask about its replacement and the current condition.",
+    "images": [
+      "/catalogue-images/122489_0.webp",
+      "/catalogue-images/122489_1.webp",
+      "/catalogue-images/122489_2.webp",
+      "/catalogue-images/122489_3.webp"
+    ],
+    "category": "crane",
+    "releaseRequired": false,
+    "listedOn": "2026-11-12"
+  },
+  {
     "code": "121206",
     "make": "XCMG",
     "model": "25K5D",
