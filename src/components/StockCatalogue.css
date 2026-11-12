@@ -5,3 +5,31 @@
 @media(max-width:1023px){.cea-machine-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}.cea-stock-filters{grid-template-columns:repeat(3,minmax(0,1fr))}.cea-stock-search{grid-column:1/-1}.cea-stock-heading{align-items:start;flex-direction:column;gap:20px}.cea-stock-brief .cea-stock-wrap{align-items:start;flex-direction:column}.cea-dialog-info{padding:48px 22px 24px}}
 @media(max-width:639px){.cea-stock-wrap{padding-left:20px;padding-right:20px}.cea-featured{padding:55px 0}.cea-stock-hero{padding:38px 0 30px}.cea-back{margin-bottom:30px}.cea-stock-hero h1{font-size:52px}.cea-stock-intro{font-size:14px}.cea-stock-proof{gap:12px 18px;line-height:1.5}.cea-stock-proof span+span{padding-left:0;border-left:0}.cea-stock-proof span:last-child{width:100%}.cea-stock-filters{grid-template-columns:1fr 1fr;padding:15px;gap:15px 10px}.cea-stock-filters label:last-child{grid-column:1/-1}.cea-machine-grid{grid-template-columns:minmax(0,1fr);gap:23px}.cea-machine-body{padding:21px}.cea-machine-brief{min-height:0}.cea-stock-pagination{gap:15px;font-size:12px}.cea-stock-pagination button{padding:10px}.cea-stock-dialog{width:calc(100vw - 18px);max-height:calc(100dvh - 18px)}.cea-dialog-shell{grid-template-columns:1fr}.cea-dialog-gallery{padding:14px}.cea-dialog-info{padding:26px 22px}.cea-dialog-info h2{font-size:38px}}
 @media(prefers-reduced-motion:reduce){.cea-stock *{scroll-behavior:auto!important;transition:none!important}}
+
+.cea-machine-price {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 4px 12px;
+  margin-bottom: 14px;
+  color: #a6b5c8;
+  font-size: 12px;
+}
+
+.cea-machine-price strong {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 26px;
+  font-weight: 800;
+  line-height: 1.15;
+}
+
+.cea-dialog-price {
+  grid-column: 1 / -1;
+}
+
+.cea-machine-price strong,
+.cea-dialog-metrics .cea-dialog-price dd {
+  color: #f3d18a;
+  font-variant-numeric: tabular-nums;
+}

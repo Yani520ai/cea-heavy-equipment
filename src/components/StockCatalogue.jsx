@@ -11,6 +11,7 @@ const labels = {
     note: 'Availability and condition confirmed on request.',
     catalogue: 'Crane catalogue', all: 'View all machines', details: 'View details', quote: 'Ask price & availability',
     reference: 'Reference', year: 'Year', capacity: 'Capacity class', confirm: 'To confirm', listed: 'Listed',
+    price: 'Price', pricedQuote: 'Confirm price & availability',
     search: 'Search model, year or reference', placeholder: 'e.g. XCA300, 2022 or 122430',
     brand: 'Brand', allBrands: 'All brands', allCapacities: 'All capacities', sort: 'Sort by',
     recent: 'Catalogue order', newest: 'Newest year', asc: 'Capacity: low to high', desc: 'Capacity: high to low',
@@ -32,6 +33,7 @@ const labels = {
     note: 'Disponibilité et état à confirmer sur demande.',
     catalogue: 'Catalogue de grues', all: 'Voir toutes les machines', details: 'Voir les détails', quote: 'Demander prix et disponibilité',
     reference: 'Référence', year: 'Année', capacity: 'Classe de capacité', confirm: 'À confirmer', listed: 'Ajoutée le',
+    price: 'Prix', pricedQuote: 'Confirmer le prix et la disponibilité',
     search: 'Rechercher un modèle, une année ou une référence', placeholder: 'Ex. XCA300, 2022 ou 122430',
     brand: 'Marque', allBrands: 'Toutes les marques', allCapacities: 'Toutes les capacités', sort: 'Trier par',
     recent: 'Ordre du catalogue', newest: 'Année décroissante', asc: 'Capacité croissante', desc: 'Capacité décroissante',
@@ -53,6 +55,17 @@ const featured = ['122430', '122339', '122461', '122445', '122386', '122457']
 const brands = [...new Set(stock.map(m => m.make))].sort()
 const pageSize = 12
 
+const usdPriceOptions = { style: 'currency', currency: 'USD', currencyDisplay: 'code' }
+const usdPriceFormatters = {
+  en: new Intl.NumberFormat('en-US', usdPriceOptions),
+  fr: new Intl.NumberFormat('fr-FR', usdPriceOptions),
+}
+
+function formatUsdPrice(priceUsd, lang) {
+  if (!Number.isFinite(priceUsd) || priceUsd <= 0) return null
+  return (usdPriceFormatters[lang] || usdPriceFormatters.en).format(priceUsd)
+}
+
 function machinePath(machine, lang) {
   const params = new URLSearchParams({ stock: machine.code })
   if (lang === 'fr') params.set('lang', 'fr')
@@ -68,6 +81,7 @@ function enquiry(machine, lang) {
 
 function MachineCard({ machine, lang, onOpen }) {
   const t = labels[lang] || labels.en
+  const price = formatUsdPrice(machine.priceUsd, lang)
   const open = e => {
     if (onOpen && !e.metaKey && !e.ctrlKey && !e.shiftKey && !e.altKey) { e.preventDefault(); onOpen(machine) }
   }
@@ -81,7 +95,10 @@ function MachineCard({ machine, lang, onOpen }) {
       <div className="cea-machine-kicker"><span>{machine.make.includes('CONFIRM') ? t.confirm : machine.make}</span><span>#{machine.code}</span></div>
       <h3><a href={href} onClick={open}>{machine.model}</a></h3><p className="cea-machine-brief">{machine.brief}</p>
       <div className="cea-machine-spec"><span>{machine.capacity ? <><strong>{machine.capacity}</strong> t</> : t.confirm}</span><a href={href} onClick={open}>{t.details}<ArrowRight size={15} /></a></div>
-      <a className="cea-machine-quote" href={enquiry(machine, lang)} target="_blank" rel="noopener noreferrer"><MessageCircle size={17} />{t.quote}</a>
+      {price && <p className="cea-machine-price"><span>{t.price}</span><strong>{price}</strong></p>}
+      <a className="cea-machine-quote" href={enquiry(machine, lang)} target="_blank" rel="noopener noreferrer">
+        <MessageCircle size={17} />{price ? t.pricedQuote : t.quote}
+      </a>
     </div>
   </article>
 }
@@ -150,6 +167,7 @@ export default function StockCatalogue({ lang = 'en' }) {
   const pages = Math.max(1, Math.ceil(filtered.length / pageSize))
   const currentPage = Math.min(page, pages)
   const visible = filtered.slice((currentPage - 1) * pageSize, currentPage * pageSize)
+  const selectedPrice = formatUsdPrice(selected?.priceUsd, lang)
   const clear = () => { setQuery(''); setBrand(''); setCapacity(''); setSort('recent'); setPage(1) }
   const open = machine => {
     opener.current = document.activeElement
@@ -199,9 +217,18 @@ export default function StockCatalogue({ lang = 'en' }) {
               {t.listed} <time dateTime={selected.listedOn}>{selected.listedOn}</time>
             </p>
           )}
-          <dl className="cea-dialog-metrics"><div><dt>{t.year}</dt><dd>{selected.year}</dd></div><div><dt>{t.capacity}</dt><dd>{selected.capacity ? `${selected.capacity} t` : t.confirm}</dd></div></dl><h3>{t.reported}</h3><p className="cea-dialog-brief">{selected.brief}</p><p className="cea-dialog-note">{selected.note}</p>
+          <dl className="cea-dialog-metrics">
+            <div><dt>{t.year}</dt><dd>{selected.year}</dd></div>
+            <div><dt>{t.capacity}</dt><dd>{selected.capacity ? `${selected.capacity} t` : t.confirm}</dd></div>
+            {selectedPrice && (
+              <div className="cea-dialog-price"><dt>{t.price}</dt><dd>{selectedPrice}</dd></div>
+            )}
+          </dl>
+          <h3>{t.reported}</h3><p className="cea-dialog-brief">{selected.brief}</p><p className="cea-dialog-note">{selected.note}</p>
           {selected.releaseRequired && <p className="cea-release-note">{t.release}</p>}
-          <a className="btn-green cea-dialog-quote" href={enquiry(selected, lang)} target="_blank" rel="noopener noreferrer"><MessageCircle size={18} />{t.quote}</a><p className="cea-quote-note">{t.quoteNote}</p>
+          <a className="btn-green cea-dialog-quote" href={enquiry(selected, lang)} target="_blank" rel="noopener noreferrer">
+            <MessageCircle size={18} />{selectedPrice ? t.pricedQuote : t.quote}
+          </a><p className="cea-quote-note">{t.quoteNote}</p>
           <button className="cea-dialog-share" onClick={share}>{shareState === 'copied' ? <Check size={16} /> : <Share2 size={16} />}{shareState === 'copied' ? t.copied : t.share}</button>{shareState.startsWith('https:') && <label className="cea-share-fallback">{t.copyLink}<input readOnly value={shareState} onFocus={e => e.target.select()} /></label>}<p className="cea-dialog-caveat">{t.caveat}</p>
         </div>
       </div>}
