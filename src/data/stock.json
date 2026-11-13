@@ -1,5 +1,44 @@
 [
   {
+    "code": "122494",
+    "make": "SANY",
+    "model": "SCC750A",
+    "year": "2019",
+    "brief": "75 t crawler crane / 43 m main boom",
+    "capacity": 75,
+    "priceUsd": 52351,
+    "note": "Model marking is visible on the machine. The 2019 year and 43 m boom configuration are reported in the listing. Ask for the load chart, working hours and included boom sections.",
+    "images": [
+      "/catalogue-images/122494_0.webp",
+      "/catalogue-images/122494_1.webp",
+      "/catalogue-images/122494_2.webp",
+      "/catalogue-images/122494_3.webp"
+    ],
+    "category": "crane",
+    "releaseRequired": false,
+    "listedOn": "2026-11-13"
+  },
+  {
+    "code": "122493",
+    "make": "ZOOMLION",
+    "model": "251V",
+    "year": "2018",
+    "brief": "42 m main boom reported",
+    "capacity": 25,
+    "priceUsd": 41194,
+    "note": "April 2018 as listed. Instrument photos show 4,713.3 crane working hours and 17,279 km. Ask for the nameplate and current readings.",
+    "images": [
+      "/catalogue-images/122493_0.webp",
+      "/catalogue-images/122493_1.webp",
+      "/catalogue-images/122493_2.webp",
+      "/catalogue-images/122493_3.webp",
+      "/catalogue-images/122493_4.webp"
+    ],
+    "category": "crane",
+    "releaseRequired": false,
+    "listedOn": "2026-11-13"
+  },
+  {
     "code": "122491",
     "make": "XCMG",
     "model": "QY25K5F-1",
@@ -55,6 +94,23 @@
     "category": "crane",
     "releaseRequired": false,
     "listedOn": "2026-11-12"
+  },
+  {
+    "code": "122479",
+    "make": "XCMG",
+    "model": "XCT75L5",
+    "year": "2017",
+    "brief": "75 t truck crane",
+    "capacity": 75,
+    "priceUsd": 65224,
+    "note": "First registration reported as February 2017. Ask for the manufacturing date, current working hours, mileage and load chart.",
+    "images": [
+      "/catalogue-images/122479_0.webp",
+      "/catalogue-images/122479_1.webp"
+    ],
+    "category": "crane",
+    "releaseRequired": false,
+    "listedOn": "2026-11-10"
   },
   {
     "code": "121206",
