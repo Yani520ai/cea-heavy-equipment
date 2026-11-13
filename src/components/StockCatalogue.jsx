@@ -55,7 +55,13 @@ const featured = ['122430', '122339', '122461', '122445', '122386', '122457']
 const brands = [...new Set(stock.map(m => m.make))].sort()
 const pageSize = 12
 
-const usdPriceOptions = { style: 'currency', currency: 'USD', currencyDisplay: 'code' }
+const usdPriceOptions = {
+  style: 'currency',
+  currency: 'USD',
+  currencyDisplay: 'code',
+  minimumFractionDigits: 0,
+  maximumFractionDigits: 0,
+}
 const usdPriceFormatters = {
   en: new Intl.NumberFormat('en-US', usdPriceOptions),
   fr: new Intl.NumberFormat('fr-FR', usdPriceOptions),

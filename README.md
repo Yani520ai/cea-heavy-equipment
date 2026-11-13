@@ -15,7 +15,7 @@ Records: `src/data/stock.json`. Photos: `public/catalogue-images/`. UI: `src/com
 
 Place new listings first in `stock.json` with a unique stock code and the listing date in `listedOn` (`YYYY-MM-DD`). Use verified specifications, distinguish meter readings from confirmed condition, and include only buyer-facing information.
 
-Set `priceUsd` to the public USD amount as a number when a price is available. The quote link provides pricing for other listings.
+Set `priceUsd` to the public price rounded to a whole US dollar when a price is available. The quote link provides pricing for other listings.
 
 The homepage retains the existing sourcing content and adds six featured units. Representative category illustrations remain distinct from actual catalogue photos.
 
