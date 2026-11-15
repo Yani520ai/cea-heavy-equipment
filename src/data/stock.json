@@ -1,5 +1,25 @@
 [
   {
+    "code": "122495",
+    "make": "ZOOMLION",
+    "model": "ZAT3000VS863",
+    "year": "2025",
+    "brief": "300 t all-terrain crane / 76 t counterweight reported",
+    "capacity": 300,
+    "note": "Model and year are shown on the crane nameplate. The listing reports two engines, 76 t of counterweight and no jib. Ask for the current configuration, hours and load chart.",
+    "images": [
+      "/catalogue-images/122495_0.webp",
+      "/catalogue-images/122495_1.webp",
+      "/catalogue-images/122495_2.webp",
+      "/catalogue-images/122495_3.webp",
+      "/catalogue-images/122495_4.webp",
+      "/catalogue-images/122495_5.webp"
+    ],
+    "category": "crane",
+    "releaseRequired": false,
+    "listedOn": "2026-11-14"
+  },
+  {
     "code": "122494",
     "make": "SANY",
     "model": "SCC750A",
