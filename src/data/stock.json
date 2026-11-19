@@ -1,5 +1,71 @@
 [
   {
+    "code": "122515",
+    "make": "SANY",
+    "model": "STC250T",
+    "year": "2018",
+    "brief": "25 t crane",
+    "capacity": 25,
+    "note": "October 2018, approximately 5,000 working hours and 17,000 km reported by the listing. The photographed display shows 4,017.5 h. Confirm current readings and condition.",
+    "images": [
+      "/catalogue-images/122515_0.webp",
+      "/catalogue-images/122515_1.webp",
+      "/catalogue-images/122515_2.webp",
+      "/catalogue-images/122515_4.webp"
+    ],
+    "category": "crane",
+    "releaseRequired": false,
+    "listedOn": "2026-11-19",
+    "priceUsd": 42224
+  },
+  {
+    "code": "122514",
+    "make": "XCMG",
+    "model": "XCT50G5-1",
+    "year": "2024",
+    "brief": "50 t crane",
+    "capacity": 50,
+    "note": "Late 2024 year and G2 configuration reported. Availability and condition require current inspection.",
+    "images": [
+      "/catalogue-images/122514_0.webp"
+    ],
+    "category": "crane",
+    "releaseRequired": false,
+    "listedOn": "2026-11-19"
+  },
+  {
+    "code": "122513",
+    "make": "XCMG",
+    "model": "XCA200G8-1",
+    "year": "2026",
+    "brief": "200 t crane",
+    "capacity": 200,
+    "note": "2026 year, automatic transmission and 60 t counterweight reported. Availability and condition require current inspection.",
+    "images": [
+      "/catalogue-images/122513_0.webp"
+    ],
+    "category": "crane",
+    "releaseRequired": false,
+    "listedOn": "2026-11-19"
+  },
+  {
+    "code": "122511",
+    "make": "ZOOMLION",
+    "model": "25V5",
+    "year": "2017",
+    "brief": "25 t crane",
+    "capacity": 25,
+    "note": "June 2017 year and China V emissions reported. Availability and condition require current inspection. The photographed odometer shows 45,297 km.",
+    "images": [
+      "/catalogue-images/122511_0.webp",
+      "/catalogue-images/122511_1.webp"
+    ],
+    "category": "crane",
+    "releaseRequired": false,
+    "listedOn": "2026-11-19",
+    "priceUsd": 30896
+  },
+  {
     "code": "122495",
     "make": "ZOOMLION",
     "model": "ZAT3000VS863",
