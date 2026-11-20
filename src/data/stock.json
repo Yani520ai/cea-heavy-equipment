@@ -1,5 +1,37 @@
 [
   {
+    "code": "122518",
+    "make": "XCMG",
+    "model": "QY55K5D",
+    "year": "2022",
+    "brief": "55 t crane",
+    "capacity": 55,
+    "note": "Nameplate: July 2022 manufacture, 55,000 kg rated lifting capacity at 3 m radius and WP9H336E62 engine. Listing reports a 46.5 m main boom, 10 t counterweight, over 5,000 hours and over 9,000 km. Confirm current readings, configuration and availability.",
+    "images": [
+      "/catalogue-images/122518_0.webp"
+    ],
+    "category": "crane",
+    "releaseRequired": false,
+    "listedOn": "2026-11-20",
+    "priceUsd": 94403
+  },
+  {
+    "code": "122516",
+    "make": "XCMG",
+    "model": "QY25K5A",
+    "year": "2019",
+    "brief": "25 t crane / price per unit",
+    "capacity": 25,
+    "note": "Chassis plate: July 2019 manufacture. Listing reports over 8,000 working hours and offers four similar units, individually or as a package. The displayed price is per unit; this is one catalogue listing. Confirm the identity, configuration, condition and availability of each unit before purchase.",
+    "images": [
+      "/catalogue-images/122516_0.webp"
+    ],
+    "category": "crane",
+    "releaseRequired": false,
+    "listedOn": "2026-11-20",
+    "priceUsd": 37761
+  },
+  {
     "code": "122515",
     "make": "SANY",
     "model": "STC250T",
@@ -64,6 +96,179 @@
     "releaseRequired": false,
     "listedOn": "2026-11-19",
     "priceUsd": 30896
+  },
+  {
+    "code": "122508",
+    "make": "SANY",
+    "model": "STC500E5",
+    "year": "2021",
+    "brief": "50 t crane",
+    "capacity": 50,
+    "note": "April 2021 manufacture reported. Listing reports 9.8 t counterweight, approximately 8,000 working hours and 8,000 km. Confirm current readings, condition and availability.",
+    "images": [
+      "/catalogue-images/122508_2.webp"
+    ],
+    "category": "crane",
+    "releaseRequired": false,
+    "listedOn": "2026-11-18",
+    "priceUsd": 73806
+  },
+  {
+    "code": "122506",
+    "make": "SANY",
+    "model": "STC200T5",
+    "year": "2019",
+    "brief": "20 t crane",
+    "capacity": 20,
+    "note": "December 2019 manufacture and 2020 registration reported. Approximately 8,500 working hours reported by the listing. Confirm current readings, condition and availability.",
+    "images": [
+      "/catalogue-images/122506_1.webp"
+    ],
+    "category": "crane",
+    "releaseRequired": false,
+    "listedOn": "2026-11-18",
+    "priceUsd": 37761
+  },
+  {
+    "code": "122505",
+    "make": "ZOOMLION",
+    "model": "250A-3",
+    "year": "2025",
+    "brief": "Crane / capacity to confirm",
+    "capacity": null,
+    "note": "May 2025 year, approximately 300 working hours and 1,800 km reported. The listing reports lapsed inspection and insurance. Confirm current documents, rated lifting capacity, configuration and availability.",
+    "images": [
+      "/catalogue-images/122505_0.webp"
+    ],
+    "category": "crane",
+    "releaseRequired": false,
+    "listedOn": "2026-11-18",
+    "priceUsd": 66940
+  },
+  {
+    "code": "122504",
+    "make": "XCMG",
+    "model": "QY80K6C",
+    "year": "2023",
+    "brief": "80 t crane",
+    "capacity": 80,
+    "note": "June 2023 manufacture shown on the nameplate. Listing reports a 60 m main boom, 24.6 t counterweight, approximately 2,000 hours and 8,000 km. Confirm current readings, configuration and availability.",
+    "images": [
+      "/catalogue-images/122504_1.webp"
+    ],
+    "category": "crane",
+    "releaseRequired": false,
+    "listedOn": "2026-11-18",
+    "priceUsd": 133881
+  },
+  {
+    "code": "122502",
+    "make": "SANY",
+    "model": "120C",
+    "year": "2019",
+    "brief": "Crane / capacity to confirm",
+    "capacity": null,
+    "note": "November 2019 manufacture reported. Listing reports a four-section boom with 30 m fully extended length. Confirm rated lifting capacity, current documents, condition and availability.",
+    "images": [
+      "/catalogue-images/122502_1.webp"
+    ],
+    "category": "crane",
+    "releaseRequired": false,
+    "listedOn": "2026-11-18",
+    "priceUsd": 27463
+  },
+  {
+    "code": "122501",
+    "make": "ZOOMLION",
+    "model": "25H",
+    "year": "2021",
+    "brief": "25 t crane",
+    "capacity": 25,
+    "note": "March 2021 manufacture, approximately 17,000 km and over 6,000 working hours reported by the listing. Confirm current readings, condition and availability.",
+    "images": [
+      "/catalogue-images/122501_0.webp"
+    ],
+    "category": "crane",
+    "releaseRequired": false,
+    "listedOn": "2026-11-18",
+    "priceUsd": 44970
+  },
+  {
+    "code": "122500",
+    "make": "XCMG",
+    "model": "QY25K5D",
+    "year": "2021",
+    "brief": "25 t crane",
+    "capacity": 25,
+    "note": "2021 year reported. Confirm current working hours, configuration, price, condition and availability.",
+    "images": [
+      "/catalogue-images/122500_0.webp"
+    ],
+    "category": "crane",
+    "releaseRequired": false,
+    "listedOn": "2026-11-17"
+  },
+  {
+    "code": "122499",
+    "make": "SANY",
+    "model": "1000C7",
+    "year": "2022",
+    "brief": "Crane / capacity to confirm",
+    "capacity": null,
+    "note": "2022 year reported. Listing describes five axles, a 73.2 m main boom, 17.5 m jib, 9 m extension and 38.5 t counterweight. Confirm rated lifting capacity, complete model designation, configuration, current price and availability.",
+    "images": [
+      "/catalogue-images/122499_1.webp"
+    ],
+    "category": "crane",
+    "releaseRequired": false,
+    "listedOn": "2026-11-16"
+  },
+  {
+    "code": "122498",
+    "make": "SANY",
+    "model": "500E",
+    "year": "2023",
+    "brief": "Crane / capacity to confirm",
+    "capacity": null,
+    "note": "Chassis plate: November 2023 manufacture; 2024 registration reported. Listing reports 8.5 t counterweight and over 8,000 km. Confirm rated lifting capacity, complete crane designation, current readings, configuration and availability.",
+    "images": [
+      "/catalogue-images/122498_0.webp"
+    ],
+    "category": "crane",
+    "releaseRequired": false,
+    "listedOn": "2026-11-16",
+    "priceUsd": 79168
+  },
+  {
+    "code": "122497",
+    "make": "SANY",
+    "model": "500C5-8",
+    "year": "2023",
+    "brief": "Crane / capacity to confirm",
+    "capacity": null,
+    "note": "July 2023 year, China VI emissions and Weichai engine reported. Confirm rated lifting capacity, complete crane designation, configuration, condition and availability.",
+    "images": [
+      "/catalogue-images/122497_0.webp"
+    ],
+    "category": "crane",
+    "releaseRequired": false,
+    "listedOn": "2026-11-16"
+  },
+  {
+    "code": "122496",
+    "make": "ZOOMLION",
+    "model": "50H",
+    "year": "2020",
+    "brief": "50 t crane",
+    "capacity": 50,
+    "note": "April 2020 manufacture and China V emissions reported. Confirm configuration, current documents, condition and availability.",
+    "images": [
+      "/catalogue-images/122496_1.webp"
+    ],
+    "category": "crane",
+    "releaseRequired": false,
+    "listedOn": "2026-11-16",
+    "priceUsd": 67799
   },
   {
     "code": "122495",
