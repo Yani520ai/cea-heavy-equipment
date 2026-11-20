@@ -221,7 +221,8 @@
     ],
     "category": "crane",
     "releaseRequired": false,
-    "listedOn": "2026-11-16"
+    "listedOn": "2026-11-16",
+    "priceUsd": 180224
   },
   {
     "code": "122498",
